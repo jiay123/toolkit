@@ -20,35 +20,46 @@
   }
   .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
   .header p { font-size: 14px; color: #a0aec0; }
-  .container { max-width: 680px; margin: 0 auto; padding: 32px 20px 60px; }
+  .container { max-width: 600px; margin: 0 auto; padding: 32px 20px 60px; }
   .card {
     background: #fff;
     border-radius: 16px;
-    padding: 32px;
+    padding: 36px 32px;
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     border: 1px solid #e8e8ee;
   }
-  .card .icon { font-size: 40px; margin-bottom: 8px; }
+  .card .icon { font-size: 44px; margin-bottom: 8px; }
   .card h2 { font-size: 22px; font-weight: 700; }
   .card .tag {
     display: inline-block;
     font-size: 12px; font-weight: 600;
-    padding: 2px 12px; border-radius: 20px;
-    margin: 6px 0;
+    padding: 2px 14px; border-radius: 20px;
+    margin: 8px 0;
   }
   .tag-yellow { background: #fef3c7; color: #92400e; }
   .tag-blue { background: #dbeafe; color: #1e40af; }
-  .card .price { font-size: 30px; font-weight: 700; margin: 6px 0; }
+  .card .price { font-size: 32px; font-weight: 700; }
   .card .price small { font-size: 14px; font-weight: 400; color: #86868b; }
-  .card .desc { font-size: 14px; color: #4a5568; margin: 8px 0 16px; }
-  .card ul { text-align: left; padding-left: 20px; margin: 12px 0; display: inline-block; }
-  .card li { font-size: 14px; color: #4a5568; margin-bottom: 4px; }
+  .card .desc { font-size: 14px; color: #4a5568; margin: 8px 0 20px; }
+  .card .btn {
+    display: inline-block;
+    background: #0f3460;
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .card .btn:hover { background: #1a4a7a; }
+  .card .btn.green { background: #38a169; }
+  .card .btn.green:hover { background: #2f855a; }
   .footer {
     text-align: center;
     padding: 20px;
-    font-size: 14px;
+    font-size: 13px;
     color: #86868b;
   }
 </style>
@@ -68,15 +79,8 @@
     <h2>懒人工具包</h2>
     <span class="tag tag-yellow">标价 ¥6.9</span>
     <div class="price">¥6.9 <small>一次性购买</small></div>
-    <div class="desc">6 个免费开源工具 + 详细安装教程</div>
-    <ul>
-      <li>ShareX — 截图录屏全能王</li>
-      <li>Umi-OCR — 免费离线文字识别</li>
-      <li>Stirling-PDF — PDF 工具箱</li>
-      <li>PowerToys — 微软效率神器</li>
-      <li>OBS Studio — 专业录屏直播</li>
-      <li>Open Design — 不会PS也能出图</li>
-    </ul>
+    <div class="desc">6 个免费开源工具 + 详细安装教程，拿到就能用</div>
+    <a class="btn" href="toolkit-detail.html">查看详情 ↓</a>
   </div>
 
   <div class="card">
@@ -84,14 +88,8 @@
     <h2>公众号写作技能包</h2>
     <span class="tag tag-blue">标价 ¥69</span>
     <div class="price">¥69 <small>永久更新</small></div>
-    <div class="desc">40 多篇文章沉淀的 AI 写作规范，拿来就用</div>
-    <ul>
-      <li>CLAUDE.md — AI 自动遵循的核心规范</li>
-      <li>memory.md — 项目上下文记忆</li>
-      <li>文章模板 — 填空即用</li>
-      <li>发稿前必检清单 — 打勾才发</li>
-      <li>3 篇高数据案例参考</li>
-    </ul>
+    <div class="desc">40+ 篇文章沉淀的 AI 写作规范，放项目里 AI 自动遵循</div>
+    <a class="btn green" href="writing-detail.html">查看详情 ↓</a>
   </div>
 
   <div class="card" style="background:#fffbeb;border-color:#f6e05e">

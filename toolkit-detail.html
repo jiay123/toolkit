@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>懒人工具包 — 6个免费开源工具</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+    color: #1a1a2e;
+    line-height: 1.8;
+    background: #f5f5f7;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+  .header p { font-size: 14px; color: #a0aec0; }
+  .back-link {
+    display: block;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 16px 24px 0;
+  }
+  .back-link a { color: #0f3460; font-size: 14px; text-decoration: none; }
+  .container { max-width: 820px; margin: 0 auto; padding: 24px 24px 60px; }
+  .tool-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #e8e8ee;
+  }
+  .tool-number {
+    display: inline-block;
+    background: #0f3460;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+  .tool-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+  .tool-desc {
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #edf2f7;
+  }
+  .section-title {
+    font-size: 15px; font-weight: 700; color: #0f3460;
+    margin: 18px 0 8px; padding-left: 10px; border-left: 3px solid #0f3460;
+  }
+  .section-title.download { border-color: #38a169; }
+  .section-title.install { border-color: #d69e2e; }
+  .section-title.usage { border-color: #3182ce; }
+  .section-title.tips { border-color: #805ad5; }
+  .tool-card p { font-size: 14px; color: #2d3748; margin-bottom: 8px; }
+  .tool-card code {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-family: "SF Mono", "Fira Code", "Courier New", monospace;
+    display: block;
+    margin: 8px 0 14px;
+    color: #2d3748;
+    word-break: break-all;
+  }
+  .tool-card .inline-code {
+    background: #edf2f7;
+    padding: 2px 8px; border-radius: 4px;
+    font-size: 13px;
+    font-family: "SF Mono", "Fira Code", monospace;
+    color: #c7254e;
+  }
+  .tool-card ul { padding-left: 20px; margin-bottom: 12px; }
+  .tool-card li { font-size: 14px; color: #2d3748; margin-bottom: 4px; }
+  .tool-card table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 14px; }
+  .tool-card th { background: #f7fafc; text-align: left; padding: 8px 12px; border-bottom: 2px solid #e2e8f0; font-weight: 600; color: #0f3460; }
+  .tool-card td { padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #2d3748; }
+  .footer-note {
+    background: #fffbeb;
+    border: 1px solid #f6e05e;
+    border-radius: 10px;
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #744210;
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔧 懒人工具包</h1>
+  <p>6 个免费开源工具 · 含详细安装教程 · 拿到就能用</p>
+</div>
+
+<div class="back-link"><a href="index.html">← 返回首页</a></div>
+
+<div class="container">
+
+<div class="tool-card">
+  <span class="tool-number">01</span>
+  <h2>ShareX — 截图+录屏全能王</h2>
+  <p class="tool-desc">比微信截图好用10倍的免费截图工具，还能截图后自动上传到图床，链接一键复制。</p>
+  <p class="section-title download">📥 下载</p>
+  <p>浏览器访问：</p>
+  <code>https://getsharex.com</code>
+  <p>点 <strong>"Download"</strong> 下载安装包。仅支持 <strong>Windows 10/11</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤</p>
+  <ul>
+    <li>双击 <span class="inline-code">ShareX-*-setup.exe</span></li>
+    <li>语言选 <strong>"简体中文"</strong> → 点"确定"</li>
+    <li>一路点 <strong>"下一步"</strong> → <strong>"我接受"</strong> → <strong>"安装"</strong></li>
+    <li>等待进度条跑完，点 <strong>"完成"</strong></li>
+  </ul>
+  <p>安装后 ShareX 会自动在右下角启动。</p>
+  <p class="section-title usage">🎮 常用快捷键</p>
+  <table>
+    <tr><th>功能</th><th>快捷键</th></tr>
+    <tr><td>区域截图</td><td><span class="inline-code">Ctrl + Shift + S</span></td></tr>
+    <tr><td>窗口截图</td><td><span class="inline-code">Ctrl + Shift + W</span></td></tr>
+    <tr><td>全屏截图</td><td><span class="inline-code">Ctrl + Alt + F</span></td></tr>
+    <tr><td>录制 GIF</td><td><span class="inline-code">Ctrl + Shift + G</span></td></tr>
+    <tr><td>录制视频</td><td><span class="inline-code">Ctrl + Shift + R</span></td></tr>
+  </table>
+  <p class="section-title tips">💡 小技巧：截图自动上传</p>
+  <ul>
+    <li>打开 ShareX → 左侧点 <strong>"目标"</strong></li>
+    <li>把 <strong>"上传截图后保存图片"</strong> 打开</li>
+    <li>默认图床选 <strong>Imgur</strong>（免费，不用注册）</li>
+  </ul>
+  <p>以后截完图，链接自动复制好了，直接粘贴就能发给别人。</p>
+</div>
+
+<div class="tool-card">
+  <span class="tool-number">02</span>
+  <h2>Umi-OCR — 免费离线文字识别</h2>
+  <p class="tool-desc">图片上的文字一键提取出来，完全离线免费，不限次数。43万人在用。</p>
+  <p class="section-title download">📥 下载</p>
+  <p>浏览器访问 GitHub Releases 页面：</p>
+  <code>https://github.com/hiroi-sora/Umi-OCR/releases</code>
+  <p>下载 <span class="inline-code">Umi-OCR_Paddle_vxxx.7z.exe</span>（最新版）。支持 <strong>Windows / Mac / Linux</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤（免安装版）</p>
+  <ul>
+    <li>下载完成后，<strong>双击运行</strong></li>
+    <li>它会自动解压到当前文件夹（等几秒）</li>
+    <li>打开解压出来的文件夹</li>
+    <li>找到 <span class="inline-code">Umi-OCR.exe</span>，<strong>双击运行</strong></li>
+  </ul>
+  <p>搞定。不需要装任何东西，打开就能用。</p>
+  <p class="section-title usage">🎮 基本使用</p>
+  <p><strong>截图识别：</strong></p>
+  <ul>
+    <li>打开 Umi-OCR → 点左边 <strong>"截图OCR"</strong></li>
+    <li>按 <span class="inline-code">Ctrl + G</span> 框选要识别的区域</li>
+    <li>文字自动提取出来，点 <strong>"复制"</strong></li>
+  </ul>
+  <p><strong>批量识别：</strong></p>
+  <ul>
+    <li>点左边 <strong>"批量OCR"</strong></li>
+    <li>把图片拖进去（可一次性拖几十张）</li>
+    <li>点 <strong>"开始识别"</strong>，一键导出为 TXT 或 Word</li>
+  </ul>
+</div>
+
+<div class="tool-card">
+  <span class="tool-number">03</span>
+  <h2>Stirling-PDF — 浏览器里的PDF工具箱</h2>
+  <p class="tool-desc">50多种PDF功能，合并、拆分、压缩、转Word全免费。GitHub 76,000⭐。</p>
+  <p class="section-title download">📥 下载</p>
+  <p><strong>方法一：下载桌面版（推荐）</strong></p>
+  <code>https://www.stirlingpdf.com</code>
+  <p>点 <strong>"Download"</strong> → 选 Windows (.exe) → 下载安装。</p>
+  <p><strong>方法二：在线版（不用安装）</strong></p>
+  <code>https://www.stirlingpdf.com/app</code>
+  <p>浏览器打开就能用。支持 <strong>Windows / Mac / Linux</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤（Windows桌面版）</p>
+  <ul>
+    <li>双击下载的 <span class="inline-code">.exe</span></li>
+    <li>选 <strong>"简体中文"</strong> → 点"确定"</li>
+    <li>一路 <strong>"下一步"</strong> → <strong>"我接受"</strong> → <strong>"安装"</strong></li>
+    <li>完成后在开始菜单打开 Stirling-PDF</li>
+  </ul>
+  <p>浏览器会自动弹出操作界面。</p>
+  <p class="section-title usage">🎮 常用功能</p>
+  <table>
+    <tr><th>你想做什么</th><th>操作步骤</th></tr>
+    <tr><td>合并多个 PDF</td><td>点"合并PDF" → 拖入文件 → 排序 → 点"合并" → 下载</td></tr>
+    <tr><td>PDF 转 Word</td><td>点"PDF转Word" → 上传 → 点"转换" → 下载</td></tr>
+    <tr><td>压缩 PDF</td><td>点"压缩PDF" → 上传 → 选压缩比例 → 下载</td></tr>
+    <tr><td>加水印</td><td>点"添加水印" → 输入文字 → 调位置 → 生成</td></tr>
+  </table>
+  <p>所有操作在你自己的电脑上完成，文件不上传第三方服务器。</p>
+</div>
+
+<div class="tool-card">
+  <span class="tool-number">04</span>
+  <h2>PowerToys — 微软官方Windows效率神器</h2>
+  <p class="tool-desc">微软自己出的免费工具合集，窗口分屏、批量重命名、取色器……装了电脑好用一倍。</p>
+  <p class="section-title download">📥 下载</p>
+  <p><strong>方法一：微软商店安装（最推荐）</strong></p>
+  <ul>
+    <li>按 <span class="inline-code">Win</span> 键，输入 <strong>"Microsoft Store"</strong>，回车</li>
+    <li>搜索 <strong>"PowerToys"</strong>，点 <strong>"获取"</strong></li>
+  </ul>
+  <p><strong>方法二：官网下载</strong></p>
+  <code>https://github.com/microsoft/PowerToys/releases</code>
+  <p>下载 <span class="inline-code">PowerToysSetup-xxx-x64.msi</span>，双击安装。仅支持 <strong>Windows 10/11</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤（微软商店版）</p>
+  <ul>
+    <li>打开 Microsoft Store</li>
+    <li>搜索 <strong>PowerToys</strong></li>
+    <li>点 <strong>"获取"</strong> → 等它下载完</li>
+    <li>打开 PowerToys，它会常驻右下角任务栏</li>
+  </ul>
+  <p class="section-title usage">🎮 最有用的几个功能</p>
+  <p><strong>① FancyZones（窗口分屏）</strong></p>
+  <ul>
+    <li>打开 PowerToys → 左边点 <strong>"FancyZones"</strong></li>
+    <li>点 <strong>"启动布局编辑器"</strong> → 选一个布局（比如三栏）</li>
+    <li>按住 <span class="inline-code">Shift</span> 把窗口拖到对应区域，自动对齐</li>
+  </ul>
+  <p><strong>② PowerRename（批量重命名）</strong></p>
+  <ul>
+    <li>选中一堆文件 → 右键 → <strong>"使用 PowerRename 重命名"</strong></li>
+    <li>输入要替换的文字，点"应用"</li>
+  </ul>
+  <p><strong>③ Text Extractor（截图识字）</strong></p>
+  <ul>
+    <li>按 <span class="inline-code">Ctrl + Shift + T</span>，框选文字区域</li>
+    <li>文字自动复制到剪贴板</li>
+  </ul>
+  <p><strong>④ ColorPicker（取色器）</strong></p>
+  <ul>
+    <li>按 <span class="inline-code">Ctrl + Shift + C</span>，点屏幕上的颜色</li>
+    <li>色值自动复制到剪贴板</li>
+  </ul>
+</div>
+
+<div class="tool-card">
+  <span class="tool-number">05</span>
+  <h2>OBS Studio — 专业录屏+直播，完全免费</h2>
+  <p class="tool-desc">B站UP主都在用的录屏软件，免费无水印无时长限制。</p>
+  <p class="section-title download">📥 下载</p>
+  <code>https://obsproject.com</code>
+  <p>点 <strong>"Download"</strong> → 选你的系统版本。支持 <strong>Windows / Mac / Linux</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤（Windows）</p>
+  <ul>
+    <li>双击 <span class="inline-code">OBS-Studio-*-Full-Installer-x64.exe</span></li>
+    <li>语言选 <strong>"简体中文"</strong> → 点"下一步"</li>
+    <li>点 <strong>"我同意"</strong> → <strong>"下一步"</strong></li>
+    <li>安装位置保持默认 → <strong>"下一步"</strong> → <strong>"安装"</strong></li>
+    <li>等1-2分钟 → 点 <strong>"完成"</strong></li>
+  </ul>
+  <p class="section-title usage">🎮 第一次使用设置</p>
+  <ul>
+    <li>选 <strong>"只优化录制，不要直播"</strong></li>
+    <li>分辨率选 <strong>1920x1080</strong>，帧率选 <strong>30</strong> 或 <strong>60</strong></li>
+    <li>点 <strong>"应用设置"</strong></li>
+  </ul>
+  <p><strong>开始录屏：</strong></p>
+  <ul>
+    <li>左下角 <strong>"来源"</strong> → 点 <strong>"+"</strong>  → 选 <strong>"显示屏采集"</strong> → 确定</li>
+    <li>点右边 <strong>"开始录制"</strong> → 录完点 <strong>"停止录制"</strong></li>
+  </ul>
+  <p><strong>修改保存位置：</strong> 顶部菜单 → <strong>"文件"</strong> → <strong>"设置"</strong> → <strong>"输出"</strong> → <strong>"录像路径"</strong></p>
+</div>
+
+<div class="tool-card">
+  <span class="tool-number">06</span>
+  <h2>Open Design — 不会PS也能出设计图</h2>
+  <p class="tool-desc">打字就能生成海报、封面、配图。GitHub 62,600⭐，完全免费。</p>
+  <p class="section-title download">📥 下载</p>
+  <code>https://open-design.ai</code>
+  <p>点 <strong>"下载桌面版"</strong> → 选 Windows 版 (.exe) 或 Mac 版 (.dmg)。支持 <strong>Windows / Mac</strong>。</p>
+  <p class="section-title install">⚙️ 安装步骤（Windows）</p>
+  <ul>
+    <li>双击 <span class="inline-code">Open-Design-Setup-*.exe</span></li>
+    <li>一路 <strong>"下一步"</strong> → <strong>"安装"</strong> → <strong>"完成"</strong></li>
+    <li>桌面上出现 <strong>Open Design</strong> 图标，双击打开</li>
+    <li>点 <strong>"登录"</strong>（用 Google 账号或注册一个）</li>
+    <li>登录后选 <strong>"设计"</strong> 模式</li>
+  </ul>
+  <p class="section-title usage">🎮 怎么用</p>
+  <p><strong>做公众号封面：</strong></p>
+  <ul>
+    <li>输入框打字，比如：<em>"帮我做一个咖啡店开业海报，深色风格，800x600"</em></li>
+    <li>AI 自动生成排版、配色、文字</li>
+    <li>满意了直接截图保存</li>
+  </ul>
+  <p><strong>做小红书配图：</strong></p>
+  <ul>
+    <li>说：<em>"给我做三张美妆推荐图，竖屏9:16"</em></li>
+    <li>AI 一次性生成三张</li>
+    <li>点每张图 → <strong>"导出"</strong> → 保存到电脑</li>
+  </ul>
+  <p>自带的AI模型已经配好了，不需要你单独买 API Key。</p>
+</div>
+
+<div class="footer-note">
+  📌 这6个工具全部免费开源。<br>
+  安装过程遇到问题，群里问我，看到就回。
+</div>
+
+</div>
+
+</body>
+</html>
